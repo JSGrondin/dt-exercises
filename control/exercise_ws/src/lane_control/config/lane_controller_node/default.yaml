@@ -1,3 +1,6 @@
 #lane_control/lane_controller_node
 
 ## ADD CONFIGS HERE
+L: 5 # look ahead distance
+K_vr: 1.5 # since angular velocity is sensitive to alpha, we scale L with vr per L = K vr (K is a gain that we tune)
+

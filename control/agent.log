@@ -1,0 +1,9861 @@
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/7d791368-1ae5-11eb-8351-0242ac110002/roslaunch-7c887bc3eef5-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+roscore/master is not yet running, will wait for it to start
+INFO:commons:version: 6.1.5
+roscore/master is not yet running, will wait for it to start
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 6.0.5
+INFO:nodes:version: 6.0.30
+[1mstarted roslaunch server http://172.17.0.2:40671/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to 7d791368-1ae5-11eb-8351-0242ac110002[0m
+master has started, initiating launch
+[1mprocess[rosout-1]: started with pid [129][0m
+started core service [/rosout]
+master has started, initiating launch
+... logging to /root/.ros/log/7d791368-1ae5-11eb-8351-0242ac110002/roslaunch-7c887bc3eef5-105.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+... logging to /root/.ros/log/7d791368-1ae5-11eb-8351-0242ac110002/roslaunch-7c887bc3eef5-106.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+[1mstarted roslaunch server http://172.17.0.2:39069/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 100, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [15, 100, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mstarted roslaunch server http://172.17.0.2:33475/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mprocess[agent/joy_mapper_node-1]: started with pid [160][0m
+[1mprocess[agent/kinematics_node-2]: started with pid [162][0m
+[1mprocess[agent/fsm_node-1]: started with pid [161][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [163][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [164][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [165][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [166][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [167][0m
+[1mprocess[agent_to_map-5]: started with pid [168][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [169][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [171][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [174][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [179][0m
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604085854.456232]: [/agent/kinematics_node] Initializing...
+[INFO] [1604085854.527943]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085854.530597]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604085854.533687]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604085854.548845]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604085854.579566]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604085854.603742]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085854.669312]: [/agent/fsm_node] Initialized.
+[INFO] [1604085854.670766]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604085854.796653]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604085854.803621]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604085854.823701]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604085854.846689]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085854.851397]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085854.860432]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085854.861102]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604085854.868770]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604085854.879689]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604085854.885606]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604085854.893081]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604085854.894412]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604085854.914981]: [/agent/line_detector_node] Initializing...
+[INFO] [1604085854.928427]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604085854.929966]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085854.939070]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604085854.942397]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085855.025853]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604085855.026741]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604085855.053005]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085855.054172]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604085855.055833]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085855.057177]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604085855.058565]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604085855.060179]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604085855.176643]: [/agent/anti_instagram_node] Initializing...
+[INFO] [1604085855.200691]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085855.218779]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604085855.354376]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604085855.379626]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604085856.213677]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085857.213659]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+publishing and latching message. Press ctrl-C to terminate
+[INFO] [1604085857.531333]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+[INFO] [1604085858.213743]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085859.213722]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085860.213042]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085861.213739]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085862.213653]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085863.213762]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085864.213742]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085865.213671]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085866.213654]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085867.213782]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085868.213547]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085869.213729]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085870.213659]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085871.213684]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085872.213780]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085873.213769]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085874.213752]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085875.213770]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085876.213679]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085877.213648]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085878.213741]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085879.213395]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085880.213678]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085881.213594]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085882.213733]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085883.213000]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085884.213720]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085885.213686]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085886.213740]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085887.213655]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085888.212991]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085889.213719]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085890.213742]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085891.213765]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085892.213725]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085893.213731]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085894.212809]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085895.213729]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085896.213561]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085897.213334]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085898.213778]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085899.213048]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085900.213733]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085901.213725]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085902.213726]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085903.213732]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085904.213722]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085905.213176]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085906.213055]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085907.213737]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085908.213676]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085909.213762]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085910.213747]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085911.213745]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[33m[WARN] [1604085911.962798]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m[INFO] [1604085912.213818]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085913.213858]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085914.213687]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085915.213035]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085916.213774]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085917.213729]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085918.213737]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085919.213743]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085920.213724]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+[INFO] [1604085921.213723]: [/agent/anti_instagram_node] [%s] Waiting for first image!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/958c010a-1bb6-11eb-9e01-0242ac110002/roslaunch-90e5b41eddcf-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 5.0.65
+INFO:nodes:version: 6.0.30
+roscore/master is not yet running, will wait for it to start
+roscore/master is not yet running, will wait for it to start
+[1mstarted roslaunch server http://172.17.0.2:43881/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to 958c010a-1bb6-11eb-9e01-0242ac110002[0m
+master has started, initiating launch
+master has started, initiating launch
+... logging to /root/.ros/log/958c010a-1bb6-11eb-9e01-0242ac110002/roslaunch-90e5b41eddcf-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+[1mprocess[rosout-1]: started with pid [132][0m
+started core service [/rosout]
+... logging to /root/.ros/log/958c010a-1bb6-11eb-9e01-0242ac110002/roslaunch-90e5b41eddcf-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mstarted roslaunch server http://172.17.0.2:36299/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mprocess[agent/joy_mapper_node-1]: started with pid [155][0m
+[1mprocess[agent/kinematics_node-2]: started with pid [156][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [157][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [159][0m
+[1mstarted roslaunch server http://172.17.0.2:45369/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/fsm_node-1]: started with pid [172][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [174][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [176][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [177][0m
+[1mprocess[agent_to_map-5]: started with pid [180][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [181][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [186][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [192][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [194][0m
+[INFO] [1604175659.247736]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604175659.257844]: [/agent/kinematics_node] Initializing...
+[INFO] [1604175659.282098]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604175659.308870]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604175659.324926]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604175659.337987]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604175659.339508]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604175659.342424]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604175659.380345]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604175659.403709]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604175659.404956]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604175659.419827]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604175659.435712]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604175659.453317]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604175659.669186]: [/agent/fsm_node] Initialized.
+[INFO] [1604175659.671566]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604175659.674376]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604175659.780354]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604175659.818667]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604175659.823804]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604175659.835432]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604175659.907192]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604175659.929565]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604175659.941070]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604175659.951732]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604175659.957665]: [/agent/line_detector_node] Initializing...
+[INFO] [1604175659.966523]: [/agent/lane_pose_vWARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/0ec979d8-1c4f-11eb-81be-0242ac110002/roslaunch-1e7544c3bc86-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+roscore/master is not yet running, will wait for it to start
+roscore/master is not yet running, will wait for it to start
+INFO:aido_schemas:aido-protocols 5.0.65
+INFO:nodes:version: 6.0.30
+[1mstarted roslaunch server http://172.17.0.2:42027/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+master has started, initiating launch
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to 0ec979d8-1c4f-11eb-81be-0242ac110002[0m
+master has started, initiating launch
+... logging to /root/.ros/log/0ec979d8-1c4f-11eb-81be-0242ac110002/roslaunch-1e7544c3bc86-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+[1mprocess[rosout-1]: started with pid [133][0m
+started core service [/rosout]
+... logging to /root/.ros/log/0ec979d8-1c4f-11eb-81be-0242ac110002/roslaunch-1e7544c3bc86-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mstarted roslaunch server http://172.17.0.2:36107/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mstarted roslaunch server http://172.17.0.2:46129/[0m
+[1mprocess[agent/joy_mapper_node-1]: started with pid [158][0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/kinematics_node-2]: started with pid [163][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [166][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [167][0m
+[1mprocess[agent/fsm_node-1]: started with pid [170][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [171][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [172][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [174][0m
+[1mprocess[agent_to_map-5]: started with pid [175][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [177][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [180][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [181][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [187][0m
+[INFO] [1604241146.432091]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604241146.460264]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241146.514285]: [/agent/kinematics_node] Initializing...
+[INFO] [1604241146.571209]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241146.572562]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604241146.573897]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604241146.618677]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604241146.638037]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604241146.676979]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241146.683913]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604241146.716005]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604241146.767636]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241146.832249]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604241146.834326]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604241146.841594]: [/agent/fsm_node] Initialized.
+[INFO] [1604241146.843241]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604241146.851175]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604241146.897123]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604241146.920686]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604241146.946838]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241146.951721]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604241146.963957]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604241146.991942]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241147.001817]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604241147.113385]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604241147.140318]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241147.141903]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604241147.149097]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604241147.170163]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604241147.194836]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241147.196167]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604241147.197303]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604241147.211451]: [/agent/line_detector_node] Initializing...
+[INFO] [1604241147.235737]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241147.286961]: [/agent/anti_instagram_node] Initializing...
+[INFO] [1604241147.309535]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241147.323856]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604241147.381788]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604241147.408759]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241147.817564]: [/agent/ground_projection_node] First projected segments published.
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+publishing and latching message. Press ctrl-C to terminate
+True
+[INFO] [1604241149.848295]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/740aeb4c-1c4f-11eb-90f4-0242ac110002/roslaunch-d3dd3ef5bc6c-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 5.0.65
+roscore/master is not yet running, will wait for it to start
+INFO:nodes:version: 6.0.30
+roscore/master is not yet running, will wait for it to start
+[1mstarted roslaunch server http://172.17.0.2:39127/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to 740aeb4c-1c4f-11eb-90f4-0242ac110002[0m
+master has started, initiating launch
+master has started, initiating launch
+... logging to /root/.ros/log/740aeb4c-1c4f-11eb-90f4-0242ac110002/roslaunch-d3dd3ef5bc6c-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+[1mprocess[rosout-1]: started with pid [133][0m
+started core service [/rosout]
+... logging to /root/.ros/log/740aeb4c-1c4f-11eb-90f4-0242ac110002/roslaunch-d3dd3ef5bc6c-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+[1mstarted roslaunch server http://172.17.0.2:36699/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mprocess[agent/joy_mapper_node-1]: started with pid [157][0m
+[1mstarted roslaunch server http://172.17.0.2:38539/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mprocess[agent/kinematics_node-2]: started with pid [159][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [162][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [164][0m
+[1mprocess[agent/fsm_node-1]: started with pid [172][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [173][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [174][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [175][0m
+[1mprocess[agent_to_map-5]: started with pid [176][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [182][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [185][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [191][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [194][0m
+[INFO] [1604241316.131950]: [/agent/kinematics_node] Initializing...
+[INFO] [1604241316.148289]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604241316.159582]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604241316.176665]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.243555]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.244104]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.245358]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604241316.246589]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604241316.252298]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604241316.253660]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604241316.309736]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604241316.496060]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604241316.541762]: [/agent/fsm_node] Initialized.
+[INFO] [1604241316.544460]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604241316.552470]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604241316.555296]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.558667]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604241316.568563]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604241316.611315]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.621899]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604241316.633296]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604241316.832050]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604241316.871160]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.879924]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604241316.899568]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604241316.929194]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241316.930942]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604241316.932286]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604241316.977170]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604241317.007239]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241317.007494]: [/agent/line_detector_node] Initializing...
+[INFO] [1604241317.007704]: [/agent/anti_instagram_node] Initializing...
+[INFO] [1604241317.008651]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604241317.015001]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604241317.035242]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241317.038445]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241317.055522]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604241317.183282]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604241317.208999]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604241317.864067]: [/agent/ground_projection_node] First projected segments published.
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+publishing and latching message. Press ctrl-C to terminate
+True
+[INFO] [1604241319.755834]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/f34e2bea-1c53-11eb-982e-0242ac110002/roslaunch-b01c1a84c4df-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+roscore/master is not yet running, will wait for it to start
+INFO:aido_schemas:aido-protocols 5.0.65
+INFO:nodes:version: 6.0.30
+roscore/master is not yet running, will wait for it to start
+[1mstarted roslaunch server http://172.17.0.2:35339/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to f34e2bea-1c53-11eb-982e-0242ac110002[0m
+master has started, initiating launch
+... logging to /root/.ros/log/f34e2bea-1c53-11eb-982e-0242ac110002/roslaunch-b01c1a84c4df-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+master has started, initiating launch
+[1mprocess[rosout-1]: started with pid [133][0m
+started core service [/rosout]
+... logging to /root/.ros/log/f34e2bea-1c53-11eb-982e-0242ac110002/roslaunch-b01c1a84c4df-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mstarted roslaunch server http://172.17.0.2:45253/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mstarted roslaunch server http://172.17.0.2:40257/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/joy_mapper_node-1]: started with pid [165][0m
+[1mprocess[agent/kinematics_node-2]: started with pid [166][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [167][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [168][0m
+[1mprocess[agent/fsm_node-1]: started with pid [169][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [170][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [171][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [172][0m
+[1mprocess[agent_to_map-5]: started with pid [173][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [175][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [178][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [184][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [186][0m
+[INFO] [1604243247.710723]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604243247.806248]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243247.827633]: [/agent/kinematics_node] Initializing...
+[INFO] [1604243247.893502]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604243247.894205]: [/agent/fsm_node] Initialized.
+[INFO] [1604243247.896606]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604243247.914944]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604243247.917079]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243247.919521]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243247.920925]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604243247.959604]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604243247.969760]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604243247.975615]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243247.976195]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243247.994652]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604243248.006508]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.019516]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604243248.043908]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604243248.065685]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604243248.067896]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604243248.069839]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604243248.090846]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604243248.127219]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.137244]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604243248.171729]: [/agent/line_detector_node] Initializing...
+[INFO] [1604243248.201320]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.300428]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604243248.329892]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.331253]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604243248.332618]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604243248.336593]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604243248.356099]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.357516]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243248.358691]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604243248.412311]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604243248.440243]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.488373]: [/agent/anti_instagram_node] Initializing...
+[INFO] [1604243248.509940]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243248.523917]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604243248.929884]: [/agent/ground_projection_node] First projected segments published.
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+publishing and latching message. Press ctrl-C to terminate
+True
+True
+[INFO] [1604243251.147537]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/2ab8b0f0-1c54-11eb-811c-0242ac110002/roslaunch-2299cebc9684-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+roscore/master is not yet running, will wait for it to start
+INFO:aido_schemas:aido-protocols 5.0.65
+roscore/master is not yet running, will wait for it to start
+INFO:nodes:version: 6.0.30
+[1mstarted roslaunch server http://172.17.0.2:42621/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+master has started, initiating launch
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to 2ab8b0f0-1c54-11eb-811c-0242ac110002[0m
+master has started, initiating launch
+... logging to /root/.ros/log/2ab8b0f0-1c54-11eb-811c-0242ac110002/roslaunch-2299cebc9684-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+... logging to /root/.ros/log/2ab8b0f0-1c54-11eb-811c-0242ac110002/roslaunch-2299cebc9684-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[1mprocess[rosout-1]: started with pid [133][0m
+started core service [/rosout]
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mstarted roslaunch server http://172.17.0.2:40947/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mstarted roslaunch server http://172.17.0.2:41471/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/joy_mapper_node-1]: started with pid [165][0m
+[1mprocess[agent/kinematics_node-2]: started with pid [166][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [167][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [168][0m
+[1mprocess[agent/fsm_node-1]: started with pid [169][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [170][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [171][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [173][0m
+[1mprocess[agent_to_map-5]: started with pid [174][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [175][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [178][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [184][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [185][0m
+[INFO] [1604243341.104852]: [/agent/kinematics_node] Initializing...
+[INFO] [1604243341.134668]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604243341.165573]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604243341.170479]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.172538]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243341.174097]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604243341.205510]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.210661]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604243341.225837]: [/agent/fsm_node] Initialized.
+[INFO] [1604243341.233860]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604243341.252193]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604243341.262593]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.275340]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.283096]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604243341.288429]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604243341.295854]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604243341.323109]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.337467]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604243341.344543]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604243341.358081]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604243341.360648]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604243341.368035]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604243341.381610]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.389087]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604243341.463500]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604243341.480095]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604243341.494351]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.495847]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604243341.502563]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604243341.510481]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.511819]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243341.513203]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604243341.600878]: [/agent/line_detector_node] Initializing...
+[INFO] [1604243341.628645]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.662850]: [/agent/anti_instagram_node] Initializing...
+[INFO] [1604243341.689547]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243341.706401]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604243341.831552]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604243341.860008]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243342.142928]: [/agent/ground_projection_node] First projected segments published.
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+publishing and latching message. Press ctrl-C to terminate
+True
+[INFO] [1604243344.167262]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+[33m[WARN] [1604243398.602641]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/741d4a76-1c54-11eb-b883-0242ac110002/roslaunch-f45f6b103261-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 5.0.65
+INFO:nodes:version: 6.0.30
+roscore/master is not yet running, will wait for it to start
+roscore/master is not yet running, will wait for it to start
+[1mstarted roslaunch server http://172.17.0.2:46749/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to 741d4a76-1c54-11eb-b883-0242ac110002[0m
+master has started, initiating launch
+master has started, initiating launch
+[1mprocess[rosout-1]: started with pid [131][0m
+started core service [/rosout]
+... logging to /root/.ros/log/741d4a76-1c54-11eb-b883-0242ac110002/roslaunch-f45f6b103261-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+... logging to /root/.ros/log/741d4a76-1c54-11eb-b883-0242ac110002/roslaunch-f45f6b103261-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mstarted roslaunch server http://172.17.0.2:37045/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mstarted roslaunch server http://172.17.0.2:34161/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/joy_mapper_node-1]: started with pid [165][0m
+[1mprocess[agent/kinematics_node-2]: started with pid [166][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [167][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [168][0m
+[1mprocess[agent/fsm_node-1]: started with pid [170][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [171][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [172][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [174][0m
+[1mprocess[agent_to_map-5]: started with pid [177][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [178][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [184][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [185][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [186][0m
+[INFO] [1604243463.742812]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604243463.753330]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604243463.785009]: [/agent/kinematics_node] Initializing...
+[INFO] [1604243463.802345]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243463.811900]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243463.841581]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243463.843008]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243463.844316]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604243463.872176]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604243463.873960]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604243463.892739]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604243463.951315]: [/agent/fsm_node] Initialized.
+[INFO] [1604243463.953332]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604243464.003511]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604243464.025574]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604243464.055117]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.067330]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604243464.148401]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604243464.220917]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.227921]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604243464.238542]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604243464.320688]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604243464.347467]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.347806]: [/agent/line_detector_node] Initializing...
+[INFO] [1604243464.355099]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604243464.372819]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604243464.373840]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.401334]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.402537]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604243464.408521]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604243464.418984]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604243464.427175]: [/agent/anti_instagram_node] Initializing...
+[INFO] [1604243464.447056]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.448917]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243464.450083]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m[INFO] [1604243464.451408]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604243464.470197]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604243464.609373]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604243464.637345]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243464.943681]: [/agent/ground_projection_node] First projected segments published.
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+publishing and latching message. Press ctrl-C to terminate
+True
+[INFO] [1604243467.285896]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+[33m[WARN] [1604243521.781457]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+... logging to /root/.ros/log/c1237692-1c54-11eb-8c93-0242ac110002/roslaunch-0b67f4d42043-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;roscore
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 5.0.65
+roscore/master is not yet running, will wait for it to start
+roscore/master is not yet running, will wait for it to start
+INFO:nodes:version: 6.0.30
+[1mstarted roslaunch server http://172.17.0.2:33203/[0m
+ros_comm version 1.15.8
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [117][0m
+master has started, initiating launch
+master has started, initiating launch
+[1mROS_MASTER_URI=http://172.17.0.2:11311/[0m
+]2;roscore http://172.17.0.2:11311/
+[1msetting /run_id to c1237692-1c54-11eb-8c93-0242ac110002[0m
+... logging to /root/.ros/log/c1237692-1c54-11eb-8c93-0242ac110002/roslaunch-0b67f4d42043-108.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+... logging to /root/.ros/log/c1237692-1c54-11eb-8c93-0242ac110002/roslaunch-0b67f4d42043-107.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch
+[1mprocess[rosout-1]: started with pid [135][0m
+started core service [/rosout]
+WARNING:rosout:Calibration not found: /data/config/calibrations/camera_intrinsic/.yaml.
+ Using default instead.
+/code/rosagent.py:116: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[1mstarted roslaunch server http://172.17.0.2:34691/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/car_cmd_switch_node/mappings/ARRIVE_AT_STOP_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/AVOID_OBSTACLE: obstacle
+ * /agent/car_cmd_switch_node/mappings/AVOID_VEHICLE: vehicle
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING: calib
+ * /agent/car_cmd_switch_node/mappings/CALIBRATING_CALC: calib_calc
+ * /agent/car_cmd_switch_node/mappings/CHARGING_FIRST_IN_LINE: stop
+ * /agent/car_cmd_switch_node/mappings/DEEP_LANE_FOLLOWING: deep_learning
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_CONTROL: intersection
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_COORDINATION: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_PLANNING: stop
+ * /agent/car_cmd_switch_node/mappings/INTERSECTION_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/IN_CHARGING_AREA: vehicle
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_FOLLOWING_AVOID: lane
+ * /agent/car_cmd_switch_node/mappings/LANE_RECOVERY: recovery
+ * /agent/car_cmd_switch_node/mappings/LOCALIZATION: stop
+ * /agent/car_cmd_switch_node/mappings/NORMAL_JOYSTICK_CONTROL: joystick
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_ALERT: lane
+ * /agent/car_cmd_switch_node/mappings/OBSTACLE_STOP: stop
+ * /agent/car_cmd_switch_node/mappings/PARALLEL_AUTONOMY: parallel_autonomy
+ * /agent/car_cmd_switch_node/mappings/PARKING: parking
+ * /agent/car_cmd_switch_node/mappings/SAFE_JOYSTICK_CONTROL: parallel_autonomy
+ * /agent/car_cmd_switch_node/mode_topic: fsm_node/mode
+ * /agent/car_cmd_switch_node/source_topics/calib: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/calib_calc: auto_calibration_...
+ * /agent/car_cmd_switch_node/source_topics/coordination: coordinator_node/...
+ * /agent/car_cmd_switch_node/source_topics/deep_learning: duckiebot_il_lane...
+ * /agent/car_cmd_switch_node/source_topics/intersection: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/joystick: joy_mapper_node/c...
+ * /agent/car_cmd_switch_node/source_topics/lane: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/obstacle: simple_stop_contr...
+ * /agent/car_cmd_switch_node/source_topics/parallel_autonomy: lane_supervisor_n...
+ * /agent/car_cmd_switch_node/source_topics/parking: lane_controller_n...
+ * /agent/car_cmd_switch_node/source_topics/recovery: lane_recovery_nod...
+ * /agent/car_cmd_switch_node/source_topics/stop: simple_stop_contr...
+ * /agent/joy_mapper_node/bicycle_kinematics: 0
+ * /agent/joy_mapper_node/simulated_vehicle_length: 0.18
+ * /agent/joy_mapper_node/speed_gain: 0.41
+ * /agent/joy_mapper_node/steer_gain: 8.3
+ * /agent/kinematics_node/baseline: 0.1
+ * /agent/kinematics_node/gain: 1.0
+ * /agent/kinematics_node/k: 27.0
+ * /agent/kinematics_node/limit: 1.0
+ * /agent/kinematics_node/omega_max: 8.0
+ * /agent/kinematics_node/radius: 0.0318
+ * /agent/kinematics_node/trim: 0.0
+ * /agent/kinematics_node/v_max: 1.0
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /agent/
+    car_cmd_switch_node (dagu_car/car_cmd_switch_node.py)
+    joy_mapper_node (joy_mapper/joy_mapper_node.py)
+    kinematics_node (dagu_car/kinematics_node.py)
+    velocity_to_pose_node (dagu_car/velocity_to_pose_node.py)
+
+[1mstarted roslaunch server http://172.17.0.2:46703/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /agent/anti_instagram_node/color_balance_scale: 0.01
+ * /agent/anti_instagram_node/interval: 1
+ * /agent/anti_instagram_node/output_scale: 1.0
+ * /agent/fsm_node/events/joystick_override_off/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_off/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_off/trigger: False
+ * /agent/fsm_node/events/joystick_override_on/msg_type: BoolStamped
+ * /agent/fsm_node/events/joystick_override_on/topic: joy_mapper_node/j...
+ * /agent/fsm_node/events/joystick_override_on/trigger: True
+ * /agent/fsm_node/events/obstacle_cleared/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_cleared/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_cleared/trigger: False
+ * /agent/fsm_node/events/obstacle_exists/msg_type: BoolStamped
+ * /agent/fsm_node/events/obstacle_exists/topic: road_anomaly_watc...
+ * /agent/fsm_node/events/obstacle_exists/trigger: True
+ * /agent/fsm_node/global_transitions/joystick_override_off: LANE_FOLLOWING
+ * /agent/fsm_node/global_transitions/joystick_override_on: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/initial_state: NORMAL_JOYSTICK_C...
+ * /agent/fsm_node/nodes/anti_instagram: anti_instagram_no...
+ * /agent/fsm_node/nodes/decoder_node: decoder_node/switch
+ * /agent/fsm_node/nodes/framerate_high: camera_node/frame...
+ * /agent/fsm_node/nodes/lane_controller_node: lane_controller_n...
+ * /agent/fsm_node/nodes/lane_filter_node: lane_filter_node/...
+ * /agent/fsm_node/nodes/line_detector_node: line_detector_nod...
+ * /agent/fsm_node/nodes/static_object_detector_node: static_object_det...
+ * /agent/fsm_node/nodes/vehicle_avoidance_control_node: vehicle_avoidance...
+ * /agent/fsm_node/nodes/vehicle_detection_node: vehicle_detection...
+ * /agent/fsm_node/nodes/vehicle_filter_node: vehicle_filter_no...
+ * /agent/fsm_node/states/LANE_FOLLOWING/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/LANE_FOLLOWING/current_status: in_progress
+ * /agent/fsm_node/states/LANE_FOLLOWING/lights: ['lane_following']
+ * /agent/fsm_node/states/LANE_FOLLOWING/transitions/obstacle_exists: OBSTACLE_STOP
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/active_nodes: ['lane_filter_nod...
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/current_status: implemented
+ * /agent/fsm_node/states/NORMAL_JOYSTICK_CONTROL/lights: ['joystick']
+ * /agent/fsm_node/states/OBSTACLE_STOP/active_nodes: ['anti_instagram'...
+ * /agent/fsm_node/states/OBSTACLE_STOP/current_status: in_progress
+ * /agent/fsm_node/states/OBSTACLE_STOP/lights: ['lane_following']
+ * /agent/fsm_node/states/OBSTACLE_STOP/transitions/obstacle_cleared: LANE_FOLLOWING
+ * /agent/ground_projection_node/board_h: 5
+ * /agent/ground_projection_node/board_w: 7
+ * /agent/ground_projection_node/square_size: 0.031
+ * /agent/ground_projection_node/x_offset: 0.191
+ * /agent/ground_projection_node/y_offset: 0.093
+ * /agent/lane_controller_node/K_vr: 1.5
+ * /agent/lane_controller_node/L: 5
+ * /agent/lane_filter_node/debug: True
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/cov_v: 0.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_max: 0.3
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/d_min: -0.15
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_d: 0.02
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/delta_phi: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/lanewidth: 0.23
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_white: 0.05
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/linewidth_yellow: 0.025
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_d_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/mean_phi_0: 0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/min_max: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_max: 1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/phi_min: -1.5
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_est: 0.33
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_max: 0.6
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/range_min: 0.2
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_d_mask: 1.0
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_0: 0.1
+ * /agent/lane_filter_node/lane_filter_histogram_configuration/sigma_phi_mask: 2.0
+ * /agent/lane_filter_node/use_propagation: True
+ * /agent/line_detector_node/colors/RED/high_1: [10, 255, 255]
+ * /agent/line_detector_node/colors/RED/high_2: [180, 255, 255]
+ * /agent/line_detector_node/colors/RED/low_1: [0, 140, 100]
+ * /agent/line_detector_node/colors/RED/low_2: [165, 140, 100]
+ * /agent/line_detector_node/colors/WHITE/high: [180, 80, 255]
+ * /agent/line_detector_node/colors/WHITE/low: [0, 0, 50]
+ * /agent/line_detector_node/colors/YELLOW/high: [40, 255, 255]
+ * /agent/line_detector_node/colors/YELLOW/low: [20, 80, 100]
+ * /agent/line_detector_node/img_size: [120, 160]
+ * /agent/line_detector_node/line_detector_parameters/canny_aperture_size: 3
+ * /agent/line_detector_node/line_detector_parameters/canny_thresholds: [80, 200]
+ * /agent/line_detector_node/line_detector_parameters/dilation_kernel_size: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_max_line_gap: 1
+ * /agent/line_detector_node/line_detector_parameters/hough_min_line_length: 3
+ * /agent/line_detector_node/line_detector_parameters/hough_threshold: 2
+ * /agent/line_detector_node/top_cutoff: 40
+ * /agent/line_segment_visualizer_node/veh_name: agent
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    agent_to_map (tf/static_transform_publisher)
+  /agent/
+    anti_instagram_node (anti_instagram/anti_instagram_node.py)
+    fsm_node (fsm/fsm_node.py)
+    ground_projection_node (ground_projection/ground_projection_node.py)
+    lane_controller_node (lane_control/lane_controller_node.py)
+    lane_filter_node (lane_filter/lane_filter_node.py)
+    lane_pose_visualizer_node (visualization_tools/lane_pose_visualizer_node.py)
+    line_detector_node (line_detector/line_detector_node.py)
+    line_segment_visualizer_node (visualization_tools/line_segment_visualizer_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-car-interface/packages/car_interface/launch/all.launch http://localhost:11311
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/code/catkin_ws/src/dt-core/packages/duckietown_demos/launch/lane_following.launch http://localhost:11311
+[1mprocess[agent/joy_mapper_node-1]: started with pid [165][0m
+[1mprocess[agent/fsm_node-1]: started with pid [166][0m
+[1mprocess[agent/kinematics_node-2]: started with pid [167][0m
+[1mprocess[agent/line_detector_node-2]: started with pid [168][0m
+[1mprocess[agent/velocity_to_pose_node-3]: started with pid [169][0m
+[1mprocess[agent/ground_projection_node-3]: started with pid [170][0m
+[1mprocess[agent/line_segment_visualizer_node-4]: started with pid [172][0m
+[1mprocess[agent/car_cmd_switch_node-4]: started with pid [171][0m
+[1mprocess[agent_to_map-5]: started with pid [174][0m
+[1mprocess[agent/lane_filter_node-6]: started with pid [175][0m
+[1mprocess[agent/lane_controller_node-7]: started with pid [176][0m
+[1mprocess[agent/lane_pose_visualizer_node-8]: started with pid [183][0m
+[1mprocess[agent/anti_instagram_node-9]: started with pid [184][0m
+[INFO] [1604243593.220085]: [/agent/joy_mapper_node] Initializing...
+[INFO] [1604243593.286367]: [/agent/joy_mapper_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.566040]: [/agent/fsm_node] Initialized.
+[INFO] [1604243593.567785]: [/agent/fsm_node] FSMState: NORMAL_JOYSTICK_CONTROL
+[INFO] [1604243593.596761]: [/agent/kinematics_node] Initializing...
+[INFO] [1604243593.617075]: [/agent/line_segment_visualizer_node] Initializing...
+[INFO] [1604243593.648418]: [/agent/car_cmd_switch_node] Initializing...
+[INFO] [1604243593.655914]: [/agent/kinematics_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.657540]: [/agent/kinematics_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243593.659003]: [/agent/kinematics_node] Kinematics calibration /data/config/calibrations/kinematics/agent.yaml not found! Using default instead.
+[0m[INFO] [1604243593.663758]: [/agent/line_segment_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.671156]: [/agent/line_segment_visualizer_node] ~veh_name = agent 
+[INFO] [1604243593.686745]: [/agent/line_segment_visualizer_node] Initialzed.
+[INFO] [1604243593.711782]: [/agent/kinematics_node] Initialized with: [gain: 1.0; trim: 0.0; baseline: 0.1; radius: 0.0318; k: 27.0; limit: 1.0; omega_max: 8.0; v_max: 1.0;]
+[INFO] [1604243593.718153]: [/agent/car_cmd_switch_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.740875]: [/agent/velocity_to_pose_node] Initializing...
+[INFO] [1604243593.794972]: [/agent/car_cmd_switch_node] Car cmd switched to joystick in state NORMAL_JOYSTICK_CONTROL.
+[INFO] [1604243593.799644]: [/agent/velocity_to_pose_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.811132]: [/agent/velocity_to_pose_node] Initialized.
+[INFO] [1604243593.814143]: [/agent/car_cmd_switch_node] Initialized.
+[INFO] [1604243593.815835]: [/agent/car_cmd_switch_node] Sources:
+	- 'lane': 'lane_controller_node/car_cmd'
+	- 'intersection': 'lane_controller_node/car_cmd'
+	- 'coordination': 'coordinator_node/car_cmd'
+	- 'joystick': 'joy_mapper_node/car_cmd'
+	- 'obstacle': 'simple_stop_controller_node/car_cmd'
+	- 'parallel_autonomy': 'lane_supervisor_node/car_cmd'
+	- 'recovery': 'lane_recovery_node/car_cmd'
+	- 'deep_learning': 'duckiebot_il_lane_following/car_cmd'
+	- 'parking': 'lane_controller_node/car_cmd'
+	- 'calib': 'auto_calibration_node/car_cmd'
+	- 'calib_calc': 'auto_calibration_calculation_node/car_cmd'
+	- 'stop': 'simple_stop_controller_node/car_cmd'
+[INFO] [1604243593.835417]: [/agent/line_detector_node] Initializing...
+[INFO] [1604243593.871796]: [/agent/lane_pose_visualizer_node] Initializing...
+[INFO] [1604243593.899212]: [/agent/line_detector_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.904150]: [/agent/lane_pose_visualizer_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.906762]: [/agent/lane_pose_visualizer_node] Vehicle name: agent
+[INFO] [1604243593.914148]: [/agent/lane_pose_visualizer_node] Initialzed.
+[INFO] [1604243593.917043]: [/agent/lane_controller_node] Initializing...
+[INFO] [1604243593.943726]: [/agent/lane_controller_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243593.951370]: [/agent/lane_controller_node] Initialized!
+[INFO] [1604243594.007515]: [/agent/ground_projection_node] Initializing...
+[INFO] [1604243594.031283]: [/agent/ground_projection_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243594.032681]: [/agent/ground_projection_node] Health status changed [STARTED] -> [WARNING]
+[33m[WARN] [1604243594.034432]: [/agent/ground_projection_node] Can't find calibration file: /data/config/calibrations/camera_extrinsic/agent.yaml.
+ Using default calibration instead.
+[0m[INFO] [1604243594.035367]: [/agent/anti_instagram_node] Initializing...
+/code/catkin_ws/src/dt-core/packages/ground_projection/src/ground_projection_node.py:194: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  calib_data = yaml.load(stream)
+[INFO] [1604243594.066403]: [/agent/anti_instagram_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243594.083059]: [/agent/anti_instagram_node] Initialized.
+[INFO] [1604243594.207809]: [/agent/lane_filter_node] Initializing...
+[INFO] [1604243594.233376]: [/agent/lane_filter_node] Health status changed [STARTING] -> [STARTED]
+[INFO] [1604243594.535270]: [/agent/ground_projection_node] First projected segments published.
+False
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+publishing and latching message. Press ctrl-C to terminate
+True
+True
+True
+[INFO] [1604243596.630533]: [/agent/car_cmd_switch_node] Car cmd switched to lane in state LANE_FOLLOWING.
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+[33m[WARN] [1604243650.975291]: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[0m

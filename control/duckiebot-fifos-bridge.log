@@ -1,0 +1,504 @@
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/055c8dc8-195b-11eb-85c3-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:35725/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.8:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.8:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 6.0.4
+INFO:nodes:version: 6.0.30
+INFO:ipce:version: 6.0.35
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:znw:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:znw:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/055c8dc8-195b-11eb-85c3-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:35725/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.8:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.8:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:aido_schemas:aido-protocols 6.0.4
+INFO:nodes:version: 6.0.30
+INFO:ipce:version: 6.0.35
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:znw:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:znw:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/f501cf84-1bb6-11eb-a823-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:40967/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.8:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.8:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/f501cf84-1bb6-11eb-a823-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:40967/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.8:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.8:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/f501cf84-1bb6-11eb-a823-b827eb7de9fd/roslaunch-js-GS63-7RD-49.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:37971/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.8:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.8:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [57][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/f501cf84-1bb6-11eb-a823-b827eb7de9fd/roslaunch-js-GS63-7RD-49.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:37971/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.8:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.8:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [57][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:37525/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:37525/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:46199/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:46199/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:46113/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:46113/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:36999/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+=> Launching app...
+... logging to /root/.ros/log/30f3c746-1c51-11eb-8c95-b827eb7de9fd/roslaunch-js-GS63-7RD-48.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch
+[1mstarted roslaunch server http://192.168.1.7:36999/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.8
+
+NODES
+  /
+    duckiebot_fifos_bridge_node (duckiebot_fifos_bridge/duckiebot_fifos_bridge_node.py)
+
+[1mROS_MASTER_URI=http://192.168.1.4:11311[0m
+]2;/code/catkin_ws/src/dt-duckiebot-fifos-bridge/packages/duckiebot_fifos_bridge/launch/duckiebot_fifos_bridge_node.launch http://192.168.1.4:11311
+[1mprocess[duckiebot_fifos_bridge_node-1]: started with pid [56][0m
+INFO:commons:version: 6.1.5
+INFO:typing:version: 6.1.8
+INFO:nodes:version: 6.0.33
+INFO:ipce:version: 6.0.35
+INFO:aido_schemas:aido-protocols 6.0.15
+INFO:DuckiebotBridge:DuckiebotBridge starting communicating with the agent.
+INFO:nodes_wrapper:Waiting for creation of /fifos/agent-out since 0 seconds.
+INFO:nodes_wrapper:Found /fifos/agent-out after 1 seconds waiting.
+INFO:DuckiebotBridge:DuckiebotBridge successfully sent to the agent the seed and episode name.
+[duckiebot_fifos_bridge_node-1] killing on exit
+<= App terminated!
